@@ -1,65 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Lernantino's Portfolio</title>
+  </head>
 
-<head>
-  <title>CSS Box Styling</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <h1>Welcome to the store!</h1>
-    <p>
-      Add some box styling to the product cards to make them POP!
-    </p>
-  </header>
-
-  <!-- Navbar -->
-  <nav>
-    <a href="#">Camera</a>
-    <a href="#">Tablet</a>
-    <a href="#">Toilet Paper</a>
-    <a href="#">Wooden Spoons</a>
-  </nav>
-
-  <!-- Body -->
-  <main>
-    <!-- Product Cards -->
-    <div class="products">
-      <section class="card">
-        <header>Camera</header>
-        <img src="./assets/images/camera.jpg" alt="camera" />
-        <p>Price: $300</p>
+  <body>
+    <!-- title and navigation bar -->
+    <header class="header">
+      <h1>Lernantino</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#About-Me">About Me</a>
+          </li>
+          <li>
+            <a href="#Work">Work</a>
+          </li>
+          <li>
+            <a href="#Contact-Me">Contact Me</a>
+          </li>
+          <li>
+            <a href="#Resume">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Lernantino's portfolio image and subtitle -->
+    <figure class="portfolio-image">
+      <img src="https://thispersondoesnotexist.com/image"/>
+      <h3>Cool subtitle here!</h3>
+    </figure>
+    <!-- main sections -->
+    <main class="content">
+      <!-- about me section -->
+      <section id="About-Me" class="About-Me">
+        <h2>About Me</h2>
+        <!-- update below paragraph -->
+        <p>
+          Lorem ipsum dolor sit amet. Et voluptatem sint qui sunt ipsum eum voluptatem fugiat. Non provident doloribus ut fugit recusandae sed asperiores impedit et quia assumenda. Qui error placeat ut accusantium ducimus ut quod omnis. Aut repudiandae libero ut illo minus qui explicabo voluptatem qui voluptatum quasi At alias quod non galisum commodi aut excepturi adipisci. <br><br> Et debitis sint ut quam quas aut voluptatem galisum sit ducimus suscipit ut aliquid totam eos galisum rerum. Quo cupiditate enim et nesciunt eius ut labore voluptatem et earum mollitia! Hic maiores maiores est natus deleniti ut dolor repellendus non pariatur eveniet sed dolor pariatur quo enim iste.
+        </p>
       </section>
-      <section class="card">
-        <header>Tablet</header>
-        <img src="./assets/images/tablet.jpg" alt="tablet" />
-        <p>Price: $150</p>
+      <!-- work section -->
+      <section id="Work" class="Work">
+      <!-- add hover over all image text -->
+        <h2>Work</h2>
+        <div class="work-line"></div>
+        <div class="work-container">
+          <div class="work-featured">
+            <div></div>
+          </div>
+          <div class="work-projects"></div>
+        </div>
       </section>
-      <section class="card">
-        <header>Toilet Paper</header>
-        <img src="./assets/images/toilet-paper.jpg" alt="toilet paper" />
-        <p>Price: $30</p>
+      <!-- contact me section -->
+      <section id="Contact-Me" class="Contact-Me">
+        <!-- add hover over all image text -->
+        <h2>Contact Me</h2>
+        <ul>
+          <li>Phone Number</li>
+          <li>Email</li>
+          <li>GitHub</li>
+          <li>Twitter</li>
+          <li>Spotify</li>
+        </ul>
       </section>
-      <section class="card">
-        <header>Wooden Spoons</header>
-        <img src="./assets/images/wooden-spoons.jpg" alt="wooden spoons" />
-        <p>Price: $10</p>
+      <!-- resume section  -->
+      <section id="Resume" class="Resume">
+        <!-- add hover over all image text -->
+        <h2>Resume</h2>
+        <!-- update below paragraph -->
+        <a>
+          link to resume
+        </a>
       </section>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <h3>
-      Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-      window!
-    </h3>
-  </footer>
-</body>
-
+    </main>
+    <!-- footer section -->
+    <footer class="footer">
+      <h2>Made with ❤️️ by Horiseon</h2>
+      <p>
+        &copy; 2023 Portfolio
+      </p>
+    </footer>
+  </body>
 </html>

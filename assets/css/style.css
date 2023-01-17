@@ -1,107 +1,132 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
-:root {
-  --white: #fff;
-  --dark-blue: #13293d;
-  --tan: #d8a47f;
-  /* You can use it with any value that is repeated throughout the sheet */
-  --border-radius: 50px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
+  background-color: #d9dcd6;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+/* navigation bar  */
+
+.header {
+  padding: 20px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background-color: #103b51;
+  color: #ffffff;
+  width: 100%;
+  position: fixed;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+  background-color: rgb(80, 196, 184);
+  color: #103b51;
+  padding: 5px 10px 5px 45px;
 }
 
-header {
-  padding: 40px;
-  text-align: center;
-  /* Refer to CSS values by the name of the custom property we assigned it */
-  background: var(--dark-blue);
-  color: var(--white);
+.header h1 .seo {
+  color: #d9dcd6;
 }
 
-nav {
-  display: flex;
-  background-color: var(--tan);
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
 }
 
-nav a {
-  color: var(--dark-blue);
-  padding: 14px 20px;
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+header nav ul li a {
+  color: rgb(80, 196, 184);
   text-decoration: none;
-  text-align: center;
+  border-bottom: rgb(80, 196, 184) solid 5px;
+  padding: 5px 15px;
 }
 
-nav a:hover {
-  background-color: var(--white);
-  color: var(--dark-blue);
+header nav ul li a:hover {
+  color: white;
+  border-bottom: white solid 5px;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
+/* portfolio image and subtitle section  */
+
+.portfolio-image {
+  padding: 8em 0px 15px 0px;
+  background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-blue-wood-panel-background-with-shiny-wood-texture-picture-image_1157499.jpg");
 }
 
-footer {
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  background: var(--dark-blue);
-  color: var(--white);
-  margin-top: auto;
+.portfolio-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-left: 30px;
+  box-shadow: 9px 9px #00000075;
 }
 
-.products {
-  flex: 1;
-  background-color: var(--white);
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.card {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: var(--border-radius);
+.portfolio-image h3 {
+  position: absolute;
+  right: 32px;
+  top: 9em;
+  background-color: rgb(80, 196, 184);
   padding: 10px;
-  flex: 0 0 300px;
-  transform: rotate(8deg);
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
+  color: #103b51;
+  font-size: 30px;
 }
 
-.card > header {
-  /* This is the same as `border-radius: 50px 50px 0 0 */
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  padding: 20px;
+/* main section  */
+
+.content {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.card > p {
+main section {
+  display: flex;
+}
+
+section h2 {
+  font-size: 20px;
+  display: inline;
+  border-right: #103b51 solid 5px;
+  font-size: 3em;
+  color: #103b51;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* about me section  */
+
+.About-Me {
+  padding-top: 30px;
+}
+
+.About-Me p {
+  padding: 15px 50px 1em 3em;
+}
+
+/* footer section  */
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
 
-.card > img {
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
-  }
+.footer h2 {
+  font-size: 20px;
 }
