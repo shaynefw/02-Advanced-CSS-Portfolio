@@ -14,8 +14,8 @@ body {
   padding: 20px 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  background-color: #103b51;
-  color: #ffffff;
+  background-color: #2c2e2f;
+  color: #bbbdbe;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -24,8 +24,8 @@ body {
 .header h1 {
   display: inline-block;
   font-size: 48px;
-  background-color: rgb(80, 196, 184);
-  color: #103b51;
+  background-color: #ffa62b;
+  color: #2c2e2f;
   padding: 5px 10px 5px 45px;
 }
 
@@ -51,22 +51,23 @@ body {
 }
 
 header nav ul li a {
-  color: rgb(80, 196, 184);
+  color: #bbbdbe;
   text-decoration: none;
-  border-bottom: rgb(80, 196, 184) solid 5px;
+  border-bottom: #bbbdbe solid 5px;
   padding: 5px 15px;
 }
 
 header nav ul li a:hover {
-  color: white;
-  border-bottom: white solid 5px;
+  color: #ffa62b;
+  border-bottom: #ffa62b solid 5px;
 }
 
 /* portfolio image and subtitle section  */
 
 .portfolio-image {
   padding: 8em 0px 15px 0px;
-  background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-blue-wood-panel-background-with-shiny-wood-texture-picture-image_1157499.jpg");
+  background-image: url("https://img.freepik.com/free-vector/globe-digital-grid-technology-corporate-background_53876-116449.jpg?w=996&t=st=1674012266~exp=1674012866~hmac=1ce1e0907ff154c61961acd31335edf7cf35d1aa565ab97ee143251168eb158a");
+  background-size: cover;
 }
 
 .portfolio-image img {
@@ -81,9 +82,9 @@ header nav ul li a:hover {
   position: absolute;
   right: 32px;
   top: 9em;
-  background-color: rgb(80, 196, 184);
+  background-color: #ffa62b;
   padding: 10px;
-  color: #103b51;
+  color: #2c2e2f;
   font-size: 30px;
 }
 
@@ -101,8 +102,8 @@ main section {
 section h2 {
   font-size: 3em;
   display: inline;
-  border-right: #103b51 solid 5px;
-  color: #103b51;
+  border-right: #2c2e2f solid 5px;
+  color: #2c2e2f;
   text-align: right;
   padding-right: 20px;
 }
@@ -134,8 +135,8 @@ section h2 {
   background-size: cover;
   border-radius: 2em;
   height: 18em;
-  border: rgb(80, 196, 184) solid 10px;
-  background-image:linear-gradient(to bottom,rgba(66,135,133,0.5) 0%, rgba(158,158,158,0.7) 100%) ,url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+  border: #ffa62b solid 10px;
+  background-image:linear-gradient(to bottom,rgba(185, 199, 134, 0.5) 0%, rgba(158,158,158,0.7) 100%) ,url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
 }
 
 .featured-container:hover {
@@ -144,13 +145,13 @@ section h2 {
 }
 
 .featured-container div {
-  background-color: rgb(80, 196, 184);
+  background-color: #ffa62b;
   width: fit-content;
   top: 12em;
   position: relative;
   padding: 10px;
   border-radius: 0em 1em 1em 0em;
-  color: #103b51;
+  color: #2c2e2f;
 }
 
 
@@ -170,7 +171,7 @@ section h2 {
 .work-container ul li a img {
   height: 10em;
   border-radius: 2em;
-  border: rgb(80, 196, 184) solid 5px;
+  border: #ffa62b solid 5px;
   filter: opacity(40%);
 }
 
@@ -183,13 +184,13 @@ section h2 {
 }
 
 .work-container ul li a div {
-  background-color: rgb(80, 196, 184);
+  background-color: #ffa62b;
   width: fit-content;
   padding: 5px;
   border-radius: 0em 1em 1em 0em;
   position: absolute;
   bottom: 32px;
-  color: #103b51;
+  color: #2c2e2f;
 }
 
 /* contact me section  */
@@ -210,17 +211,47 @@ section h2 {
 }
 
 .contact-me ul li a {
-  border-bottom: #103b51 solid 5px;
+  border-bottom: #2c2e2f solid 5px;
   text-decoration: none;
-  color: #103b51;
+  color: #2c2e2f;
   font-size: 20px;
   padding: 5px 15px;
 
 }
 
 .contact-me ul li a:hover {
-  border-bottom: rgb(247, 0, 255) solid 5px;
-  color: rgb(247, 35, 194);
+  border-bottom: #ffa62b solid 5px;
+  color: #ffa62b;
+}
+
+/* resume section  */
+
+.Resume {
+  padding-bottom: 1em;
+}
+
+.Resume div {
+  width: 100%;
+  text-align: center;
+}
+
+.Resume div button {
+  background-color: #2c2e2f;
+  color: #bbbdbe;
+}
+
+.Resume div button:hover {
+  background-color: #bbbdbe;
+  color: #2c2e2f;
+}
+
+.Resume div button a {
+  color: #bbbdbe;
+  text-decoration: none;
+}
+
+.Resume div button a:hover {
+  color: #2c2e2f;
 }
 
 /* footer section  */
@@ -231,8 +262,15 @@ section h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   text-align: center;
+  background-color: #2c2e2f;
+  color: #bbbdbe;
 }
 
 .footer h2 {
   font-size: 20px;
 }
+
+/* media query's  */
+
+
+
